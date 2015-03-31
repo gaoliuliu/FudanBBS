@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A7968AA9-F252-4401-81E7-C322B14B36AA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FudanBBS_V3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2D2EF3F78AABABC6B4C0B4DE0F33B37231AA6832</key>
+		<string>https://github.com/gaoliuliu/FudanBBS.git</string>
+		<key>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</key>
+		<string>https://github.com/gaoliuliu/FudanBBS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FudanBBS_V3.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2D2EF3F78AABABC6B4C0B4DE0F33B37231AA6832</key>
+		<string>../../../FudanBBS_V3</string>
+		<key>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gaoliuliu/FudanBBS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2D2EF3F78AABABC6B4C0B4DE0F33B37231AA6832</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FudanBBS_V3</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FudanBBSV5</string>
+		</dict>
+	</array>
+</dict>
+</plist>
