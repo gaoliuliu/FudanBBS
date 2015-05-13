@@ -14,22 +14,72 @@ class TopDetailTableViewController: UITableViewController,UITableViewDelegate, U
     var new1:String! = ""
     var board:String! = ""
     var f:String! = ""
-    
+    let handler = Top10HTTPHandler()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.estimatedRowHeight = 30.0
+        self.tableView.estimatedRowHeight = 10.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        let handler = Top10HTTPHandler()
-        bbs = handler.getTop10PostPA(new1, board: board, f: f)
         
+        bbs = handler.getTop10PostPA(new1, board: board, f: f)
+        self.setupRefresh()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func setupRefresh(){
+        self.tableView.addHeaderWithCallback({
+            /*self.fakeData!.removeAllObjects()
+            for (var i:Int = 0; i<15; i++) {
+                var text:String = "内容"+String( arc4random_uniform(10000))
+                self.fakeData!.addObject(text)
+            }*/
+            var tempbbs = self.handler.getTop10PostPA_PREV(self.new1,bid: self.bbs.bid,gid: self.bbs.gid,fid: self.bbs.fid,a: "p")
+            if(tempbbs.paList.count != 0)
+            {
+                self.bbs = tempbbs
+            }
+            
+            
+            
+            let delayInSeconds:Int64 =  100000000  * 2
+            
+            
+            var popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW,delayInSeconds)
+            dispatch_after(popTime, dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+                self.tableView.headerEndRefreshing()
+            })
+            
+        })
+        
+        
+        self.tableView.addFooterWithCallback({
+           /* for (var i:Int = 0; i<10; i++) {
+                var text:String = "内容"+String( arc4random_uniform(10000))
+                
+                self.fakeData!.addObject(text)
+            }*/
+            var tempbbs = self.handler.getTop10PostPA_NEXT(self.new1,bid: self.bbs.bid,gid: self.bbs.gid,fid: self.bbs.fid,a: "n")
+            if(tempbbs.paList.count != 0)
+            {
+                self.bbs = tempbbs
+            }
+            let delayInSeconds:Int64 = 100000000 * 2
+            var popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW,delayInSeconds)
+            dispatch_after(popTime, dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+                self.tableView.footerEndRefreshing()
+                
+                //self.tableView.setFooterHidden(true)
+            })
+        })
     }
 
+    override func viewDidAppear(animated: Bool) {
+        //println("reload")
+
+        //self.tableView.reloadData()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,7 +102,7 @@ class TopDetailTableViewController: UITableViewController,UITableViewDelegate, U
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as TopDetailTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TopDetailTableViewCell
         let top = bbs.paList[indexPath.row]
             //top10s[indexPath.row]
         
@@ -64,56 +114,8 @@ class TopDetailTableViewController: UITableViewController,UITableViewDelegate, U
         cell.quoteLabel?.text = top.quote
         cell.tailLabel?.text = top.tail
         
-     /*   var artCGrec = cell.articleLabel.frame
-        println(artCGrec.minX)
-        println(artCGrec.minY)
-        println(artCGrec.maxX)
-        println(artCGrec.maxY)
-        println("原始高度：\(artCGrec.height)")
-        println("原始宽度：\(artCGrec.width)")
-        */
-        //cell.articleLabel.sizeToFit()
-        
-        //println(artCGrec.minX)
-        //println(artCGrec.minY)
-        //println(artCGrec.height)
-        //println(artCGrec.width)
-       
-        //var size:CGSize =
-        //cell.articleLabel.sizeThatFits(<#size: CGSize#>)
-        
-        
-     /*   var test: NSString  = top.pa
-        
-       var font:UIFont = UIFont(name: "Arial", size:12)!
-       var size: CGSize = CGSizeMake(300,2000)
-        var artSizeRec = test.boundingRectWithSize(size, options:NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:font] ,context: nil)
-          println(artSizeRec.height)
-          println(artSizeRec.width)
-        
-        cell.articleLabel.sizeThatFits(CGSizeMake(artSizeRec.width, artSizeRec.height))
-        cell.articleLabel.sizeToFit()
-        //cell.sizeThatFits(CGSizeMake(300, cell.frame.height+100))
-        //cell.sizeToFit()
-        
-        println("更新高度：\(cell.articleLabel.frame.height)")
-        println("更新宽度：\(cell.articleLabel.frame.width)")
-        println(cell.articleLabel.frame.minX)
-        println(cell.articleLabel.frame.minY)
-        println(cell.articleLabel.frame.maxX)
-        println(cell.articleLabel.frame.maxY)
-        //var artSizeRec2 =test.boundingRectWithSize(<#size: CGSize#>, options: .NSStringDrawingUsesLineFragmentOrigin, attributes: <#[NSObject : AnyObject]!#>, context: <#NSStringDrawingContext!#>)
-        //var artSize: CGSize = test.sizeWithAttributes(attrs:[font:font,size:size,lineBreakMode:UILineBreadMode])
-        
-       // sizeWithFont:font constrainedToSize:size lineBreakMode:UILineBreakModeWordWrap
-      //  println(artLabelSize.height)
-      //  println(artLabelSize.width)
-        */
         cell.contentView.userInteractionEnabled = true
-        //cell.userInteractionEnabled = true
-        //cell.reButton.userInteractionEnabled = true
-        //cell.reButton.addTarget(<#target: AnyObject?#>, action: //, forControlEvents: <#UIControlEvents#>)
-        //cell.contentView.addSubview(cell.reButton)
+        
         return cell
     }
     

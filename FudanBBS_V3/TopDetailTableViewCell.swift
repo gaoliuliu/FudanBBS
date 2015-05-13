@@ -23,6 +23,8 @@ class TopDetailTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        //println("cell reload")
+        //self.reloadInputViews()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

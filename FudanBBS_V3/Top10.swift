@@ -23,5 +23,5 @@ public class Top10{
         self.count = count
         self.gid = gid
         self.text = text
-    }
+            }
 }

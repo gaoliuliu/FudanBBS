@@ -11,6 +11,7 @@ import Foundation
 class bbstcon {
 var bid:String! = ""
 var gid:String! = ""
+var fid:String! = ""
 var anony:String! = ""
 var page:String!  = ""
 var attach:String!  = ""

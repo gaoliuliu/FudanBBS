@@ -46,7 +46,7 @@ class TopTableViewController: UITableViewController,UITableViewDelegate, UITable
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as TopTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TopTableViewCell
         let top = top10s[indexPath.row]
 
         // Configure the cell...
@@ -105,14 +105,12 @@ class TopTableViewController: UITableViewController,UITableViewDelegate, UITable
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "showTopDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let destinationController = segue.destinationViewController as TopDetailTableViewController
+                let destinationController = segue.destinationViewController as! TopDetailTableViewController
                 
                 destinationController.new1 = "1"
                 destinationController.board = top10s[indexPath.row].board
                 destinationController.f = top10s[indexPath.row].gid
-               // destinationController.type = self.restaurants[indexPath.row].type
-               // destinationController.restaurant = restaurants[indexPath.row]
-                //println("type +\(self.restaurantTypes[indexPath.row])"
+
                 println(destinationController.new1)
                 println(destinationController.board)
                 println(destinationController.f)
