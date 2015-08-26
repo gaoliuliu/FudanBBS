@@ -1,28 +1,25 @@
 //
-//  TopTableViewController.swift
+//  MyFavouriteTableViewController.swift
 //  FudanBBS_V3
 //
-//  Created by gaowei on 14/12/21.
-//  Copyright (c) 2014年 gaowei. All rights reserved.
+//  Created by gaowei on 15/5/23.
+//  Copyright (c) 2015年 gaowei. All rights reserved.
 //
 
 import UIKit
 
-
-class TopTableViewController: UITableViewController,UITableViewDelegate, UITableViewDataSource{
-
-    var top10s:[Top10]=[]
-    
+class MyFavouriteTableViewController: UITableViewController,UITableViewDelegate, UITableViewDataSource {
+    var favoriteNames = []
     let top10Handler = Top10HTTPHandler()
-    
-        
-        
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        top10s = top10Handler.getTop10List()
-       
+        favoriteNames = top10Handler.getFavList()
         self.setupRefresh()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     func setupRefresh(){
         self.tableView.addHeaderWithCallback({
@@ -31,7 +28,7 @@ class TopTableViewController: UITableViewController,UITableViewDelegate, UITable
             var text:String = "内容"+String( arc4random_uniform(10000))
             self.fakeData!.addObject(text)
             }*/
-            self.top10s = self.top10Handler.getTop10List()
+            self.favoriteNames = self.top10Handler.getFavList()
             
             
             
@@ -48,9 +45,7 @@ class TopTableViewController: UITableViewController,UITableViewDelegate, UITable
         })
         
         
-   }
-    
-
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -67,22 +62,25 @@ class TopTableViewController: UITableViewController,UITableViewDelegate, UITable
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return top10s.count
+        return favoriteNames.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TopTableViewCell
-        let top = top10s[indexPath.row]
+        //let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
-        cell.countLabel?.text = top.count
-        cell.titleLabel?.text = top.text
 
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath:
+    indexPath) as! UITableViewCell
+        // Configure the cell...
+        cell.textLabel?.text = favoriteNames[indexPath.row] as! String
+        
         return cell
     }
     
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -128,19 +126,16 @@ class TopTableViewController: UITableViewController,UITableViewDelegate, UITable
     }
     */
     
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == "showTopDetail" {
+        if segue.identifier == "showPost" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let destinationController = segue.destinationViewController as! TopDetailTableViewController
+                let destinationController = segue.destinationViewController as! MyFavouriteListTableViewController
                 
-                destinationController.new1 = "1"
-                destinationController.board = top10s[indexPath.row].board
-                destinationController.f = top10s[indexPath.row].gid
-
-                //println(destinationController.new1)
-                //println(destinationController.board)
-                //println(destinationController.f)
+                
+                destinationController.board = favoriteNames[indexPath.row] as! String
+                
+                
+           
             } }
     }
 

@@ -18,7 +18,9 @@ class TopDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var tailLabel: UILabel!
     @IBOutlet weak var reButton: UIButton!
-    
+    @IBOutlet weak var picButton: UIButton!
+    var bid:String! = ""
+    var fid:String! = "'"
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,8 +35,5 @@ class TopDetailTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func repost2345(sender: AnyObject){
-        println("回复")
-    }
-
+    
 }

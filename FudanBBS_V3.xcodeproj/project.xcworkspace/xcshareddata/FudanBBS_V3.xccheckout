@@ -7,20 +7,16 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A7968AA9-F252-4401-81E7-C322B14B36AA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>FudanBBS_V3</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2D2EF3F78AABABC6B4C0B4DE0F33B37231AA6832</key>
-		<string>https://github.com/gaoliuliu/FudanBBS.git</string>
 		<key>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</key>
 		<string>https://github.com/gaoliuliu/FudanBBS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FudanBBS_V3.xcodeproj/project.xcworkspace</string>
+	<string>FudanBBS_V3.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2D2EF3F78AABABC6B4C0B4DE0F33B37231AA6832</key>
-		<string>../../../..</string>
 		<key>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</key>
 		<string>../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>EEA020E8A0709CC16D2B5F1C374C305D3C51A835</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2D2EF3F78AABABC6B4C0B4DE0F33B37231AA6832</string>
-			<key>IDESourceControlWCCName</key>
-			<string>..</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

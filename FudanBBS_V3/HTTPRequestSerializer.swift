@@ -17,7 +17,7 @@ extension String {
         :returns: Encoded version of of string it was called as.
     */
     var escaped: String {
-        return CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,self,"[].",":/?&=;+!@#$()',*",CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)) as! String
+        return CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,self,"[].",":/?&=;+!@#$()',*",CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue)) as! String
     }
 }
 
@@ -28,7 +28,9 @@ public class HTTPRequestSerializer: NSObject {
     /// headers for the request.
     public var headers = Dictionary<String,String>()
     /// encoding for the request.
-    public var stringEncoding: UInt = NSUTF8StringEncoding
+    //public var stringEncoding: UInt = NSUTF8StringEncoding
+    
+    public var stringEncoding:NSStringEncoding = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue))
     /// Send request if using cellular network or not. Defaults to true.
     public var allowsCellularAccess = true
     /// If the request should handle cookies of not. Defaults to true.
@@ -192,6 +194,7 @@ public class HTTPRequestSerializer: NSObject {
                 }
             } else {
                 let str = "\(self.multiFormHeader(pair.key, fileName: nil, type: nil, multiCRLF: multiCRLF))\(pair.getValue())"
+                //mutData.appendData(str.dataUsingEncoding(self.stringEncoding)!)
                 mutData.appendData(str.dataUsingEncoding(self.stringEncoding)!)
             }
             if append {
@@ -275,7 +278,7 @@ public class JSONRequestSerializer: HTTPRequestSerializer {
         var request = newRequest(url, method: method)
         var error: NSError?
         if parameters != nil {
-            var charset = CFStringConvertEncodingToIANACharSetName(CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+            var charset = CFStringConvertEncodingToIANACharSetName(CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue));
             request.setValue("application/json; charset=\(charset)", forHTTPHeaderField: self.contentTypeKey)
             request.HTTPBody = NSJSONSerialization.dataWithJSONObject(parameters!, options: NSJSONWritingOptions(), error:&error)
         }

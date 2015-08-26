@@ -19,6 +19,7 @@ class Post_PA{
     var pa:String!  = ""
     var quote:String! = ""
     var tail:String! = ""
+    var images:[String!] = []
     init(){}
     
 }
