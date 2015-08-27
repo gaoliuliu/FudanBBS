@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651811001B8F5488006CC9F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651810F31B8F5488006CC9F1 /* LaunchScreen.xib */; };
+		651811021B8F5488006CC9F1 /* DiscussViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651810F71B8F5488006CC9F1 /* DiscussViewController.swift */; };
+		651811031B8F5488006CC9F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651810F81B8F5488006CC9F1 /* Images.xcassets */; };
+		651811041B8F5488006CC9F1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 651810F91B8F5488006CC9F1 /* Info.plist */; };
+		651811051B8F5488006CC9F1 /* LSImgZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651810FA1B8F5488006CC9F1 /* LSImgZoomView.swift */; };
+		651811061B8F5488006CC9F1 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651810FB1B8F5488006CC9F1 /* MyCollectionViewCell.swift */; };
+		651811071B8F5488006CC9F1 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651810FC1B8F5488006CC9F1 /* MyCollectionViewCell.xib */; };
+		651811081B8F5488006CC9F1 /* MyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651810FD1B8F5488006CC9F1 /* MyLayout.swift */; };
+		651811091B8F5488006CC9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651810FE1B8F5488006CC9F1 /* ViewController.swift */; };
+		6518113A1B8F5785006CC9F1 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 651811331B8F567F006CC9F1 /* libSDWebImage.a */; };
 		651A80E41B807304001AEC72 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A80E31B807304001AEC72 /* LoginTableViewController.swift */; };
 		6524FD511B896E7800054CBE /* PstMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524FD501B896E7800054CBE /* PstMail.swift */; };
-		6524FFA11B8CB5F600054CBE /* DiscussViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524FF961B8CB5F600054CBE /* DiscussViewController.swift */; };
-		6524FFA21B8CB5F600054CBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6524FF971B8CB5F600054CBE /* Images.xcassets */; };
-		6524FFA31B8CB5F600054CBE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6524FF981B8CB5F600054CBE /* Info.plist */; };
-		6524FFA41B8CB5F600054CBE /* LSImgZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524FF991B8CB5F600054CBE /* LSImgZoomView.swift */; };
-		6524FFA51B8CB5F600054CBE /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524FF9A1B8CB5F600054CBE /* MyCollectionViewCell.swift */; };
-		6524FFA61B8CB5F600054CBE /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6524FF9B1B8CB5F600054CBE /* MyCollectionViewCell.xib */; };
-		6524FFA71B8CB5F600054CBE /* MyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524FF9C1B8CB5F600054CBE /* MyLayout.swift */; };
-		6524FFA81B8CB5F600054CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524FF9D1B8CB5F600054CBE /* ViewController.swift */; };
-		6524FFA91B8CB62900054CBE /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6524FE711B8CB42100054CBE /* libSDWebImage.a */; };
 		6524FFAB1B8CB63500054CBE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6524FFAA1B8CB63500054CBE /* ImageIO.framework */; };
 		6524FFAE1B8CB66D00054CBE /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524FFAD1B8CB66D00054CBE /* Test.m */; };
 		6524FFB11B8DDD8C00054CBE /* 149-2015-summer-AnnSong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6524FFB01B8DDD8C00054CBE /* 149-2015-summer-AnnSong.jpg */; };
@@ -68,30 +69,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6524FE701B8CB42100054CBE /* PBXContainerItemProxy */ = {
+		651811321B8F567F006CC9F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */;
+			containerPortal = 6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 53761325155AD0D5005750A4;
 			remoteInfo = SDWebImage;
 		};
-		6524FE721B8CB42100054CBE /* PBXContainerItemProxy */ = {
+		651811341B8F567F006CC9F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */;
+			containerPortal = 6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 537D95C117ECC1FE0097C263;
 			remoteInfo = "SDWebImage+WebP";
 		};
-		6524FE741B8CB42100054CBE /* PBXContainerItemProxy */ = {
+		651811361B8F567F006CC9F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */;
+			containerPortal = 6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
 			remoteInfo = "SDWebImage+MKAnnotation";
 		};
-		6524FE761B8CB42100054CBE /* PBXContainerItemProxy */ = {
+		651811381B8F567F006CC9F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */;
+			containerPortal = 6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4A2CADFF1AB4BB5300B6BC39;
 			remoteInfo = WebImage;
@@ -134,17 +135,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		651810F41B8F5488006CC9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		651810F71B8F5488006CC9F1 /* DiscussViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussViewController.swift; sourceTree = "<group>"; };
+		651810F81B8F5488006CC9F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		651810F91B8F5488006CC9F1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651810FA1B8F5488006CC9F1 /* LSImgZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSImgZoomView.swift; sourceTree = "<group>"; };
+		651810FB1B8F5488006CC9F1 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		651810FC1B8F5488006CC9F1 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		651810FD1B8F5488006CC9F1 /* MyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLayout.swift; sourceTree = "<group>"; };
+		651810FE1B8F5488006CC9F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
 		651A80E31B807304001AEC72 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		6524FD501B896E7800054CBE /* PstMail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PstMail.swift; sourceTree = "<group>"; };
-		6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../Downloads/LSFlowViewForSwift-master/LSFlowView/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
-		6524FF961B8CB5F600054CBE /* DiscussViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussViewController.swift; sourceTree = "<group>"; };
-		6524FF971B8CB5F600054CBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6524FF981B8CB5F600054CBE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6524FF991B8CB5F600054CBE /* LSImgZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSImgZoomView.swift; sourceTree = "<group>"; };
-		6524FF9A1B8CB5F600054CBE /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		6524FF9B1B8CB5F600054CBE /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
-		6524FF9C1B8CB5F600054CBE /* MyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLayout.swift; sourceTree = "<group>"; };
-		6524FF9D1B8CB5F600054CBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6524FFAA1B8CB63500054CBE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6524FFAC1B8CB66C00054CBE /* FudanBBS_V3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FudanBBS_V3-Bridging-Header.h"; sourceTree = "<group>"; };
 		6524FFAD1B8CB66D00054CBE /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
@@ -205,8 +207,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6518113A1B8F5785006CC9F1 /* libSDWebImage.a in Frameworks */,
 				6524FFAB1B8CB63500054CBE /* ImageIO.framework in Frameworks */,
-				6524FFA91B8CB62900054CBE /* libSDWebImage.a in Frameworks */,
 				655321241A4709BB001BE81A /* libz.1.2.5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,31 +223,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6524FE691B8CB42100054CBE /* Products */ = {
+		651810F11B8F5488006CC9F1 /* LSFlowView */ = {
 			isa = PBXGroup;
 			children = (
-				6524FE711B8CB42100054CBE /* libSDWebImage.a */,
-				6524FE731B8CB42100054CBE /* libSDWebImage+WebP.a */,
-				6524FE751B8CB42100054CBE /* libSDWebImage+MKAnnotation.a */,
-				6524FE771B8CB42100054CBE /* WebImage.framework */,
+				651810F31B8F5488006CC9F1 /* LaunchScreen.xib */,
+				651810F71B8F5488006CC9F1 /* DiscussViewController.swift */,
+				651810F81B8F5488006CC9F1 /* Images.xcassets */,
+				651810F91B8F5488006CC9F1 /* Info.plist */,
+				651810FA1B8F5488006CC9F1 /* LSImgZoomView.swift */,
+				651810FB1B8F5488006CC9F1 /* MyCollectionViewCell.swift */,
+				651810FC1B8F5488006CC9F1 /* MyCollectionViewCell.xib */,
+				651810FD1B8F5488006CC9F1 /* MyLayout.swift */,
+				651810FE1B8F5488006CC9F1 /* ViewController.swift */,
 			);
-			name = Products;
+			path = LSFlowView;
 			sourceTree = "<group>";
 		};
-		6524FF901B8CB5F600054CBE /* LSFlowView */ = {
+		6518112B1B8F567F006CC9F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6524FF961B8CB5F600054CBE /* DiscussViewController.swift */,
-				6524FF971B8CB5F600054CBE /* Images.xcassets */,
-				6524FF981B8CB5F600054CBE /* Info.plist */,
-				6524FF991B8CB5F600054CBE /* LSImgZoomView.swift */,
-				6524FF9A1B8CB5F600054CBE /* MyCollectionViewCell.swift */,
-				6524FF9B1B8CB5F600054CBE /* MyCollectionViewCell.xib */,
-				6524FF9C1B8CB5F600054CBE /* MyLayout.swift */,
-				6524FF9D1B8CB5F600054CBE /* ViewController.swift */,
+				651811331B8F567F006CC9F1 /* libSDWebImage.a */,
+				651811351B8F567F006CC9F1 /* libSDWebImage+WebP.a */,
+				651811371B8F567F006CC9F1 /* libSDWebImage+MKAnnotation.a */,
+				651811391B8F567F006CC9F1 /* WebImage.framework */,
 			);
-			name = LSFlowView;
-			path = "../../../Downloads/LSFlowViewForSwift-master/LSFlowView/LSFlowView";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6536E7591ACAEF5D0095AA12 /* Products */ = {
@@ -262,10 +264,10 @@
 		6553209A1A46A489001BE81A = {
 			isa = PBXGroup;
 			children = (
+				6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */,
+				651810F11B8F5488006CC9F1 /* LSFlowView */,
 				6524FFAD1B8CB66D00054CBE /* Test.m */,
 				6524FFAA1B8CB63500054CBE /* ImageIO.framework */,
-				6524FF901B8CB5F600054CBE /* LSFlowView */,
-				6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */,
 				655321231A4709BB001BE81A /* libz.1.2.5.dylib */,
 				655320A51A46A489001BE81A /* FudanBBS_V3 */,
 				655320BB1A46A48A001BE81A /* FudanBBS_V3Tests */,
@@ -431,8 +433,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6524FE691B8CB42100054CBE /* Products */;
-					ProjectRef = 6524FE681B8CB42100054CBE /* SDWebImage.xcodeproj */;
+					ProductGroup = 6518112B1B8F567F006CC9F1 /* Products */;
+					ProjectRef = 6518112A1B8F567F006CC9F1 /* SDWebImage.xcodeproj */;
 				},
 				{
 					ProductGroup = 6536E7591ACAEF5D0095AA12 /* Products */;
@@ -448,32 +450,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6524FE711B8CB42100054CBE /* libSDWebImage.a */ = {
+		651811331B8F567F006CC9F1 /* libSDWebImage.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDWebImage.a;
-			remoteRef = 6524FE701B8CB42100054CBE /* PBXContainerItemProxy */;
+			remoteRef = 651811321B8F567F006CC9F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6524FE731B8CB42100054CBE /* libSDWebImage+WebP.a */ = {
+		651811351B8F567F006CC9F1 /* libSDWebImage+WebP.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libSDWebImage+WebP.a";
-			remoteRef = 6524FE721B8CB42100054CBE /* PBXContainerItemProxy */;
+			remoteRef = 651811341B8F567F006CC9F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6524FE751B8CB42100054CBE /* libSDWebImage+MKAnnotation.a */ = {
+		651811371B8F567F006CC9F1 /* libSDWebImage+MKAnnotation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libSDWebImage+MKAnnotation.a";
-			remoteRef = 6524FE741B8CB42100054CBE /* PBXContainerItemProxy */;
+			remoteRef = 651811361B8F567F006CC9F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6524FE771B8CB42100054CBE /* WebImage.framework */ = {
+		651811391B8F567F006CC9F1 /* WebImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = WebImage.framework;
-			remoteRef = 6524FE761B8CB42100054CBE /* PBXContainerItemProxy */;
+			remoteRef = 651811381B8F567F006CC9F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		6536E7641ACAEF5D0095AA12 /* SwiftHTTP.framework */ = {
@@ -514,16 +516,17 @@
 				655320AE1A46A489001BE81A /* Main.storyboard in Resources */,
 				65DB23731B03A6A9005C9DA8 /* fudanicon.jpg in Resources */,
 				65DB237D1B04C8C1005C9DA8 /* fudanicon120.png in Resources */,
+				651811031B8F5488006CC9F1 /* Images.xcassets in Resources */,
+				651811071B8F5488006CC9F1 /* MyCollectionViewCell.xib in Resources */,
 				65DB23681B038CA2005C9DA8 /* arrow@2x.png in Resources */,
+				651811041B8F5488006CC9F1 /* Info.plist in Resources */,
 				655320B31A46A489001BE81A /* LaunchScreen.xib in Resources */,
 				6524FFB11B8DDD8C00054CBE /* 149-2015-summer-AnnSong.jpg in Resources */,
 				65DB23791B03A76B005C9DA8 /* fudanicon.png in Resources */,
-				6524FFA61B8CB5F600054CBE /* MyCollectionViewCell.xib in Resources */,
 				65DB23701B03A397005C9DA8 /* fudanimage.jpg in Resources */,
-				6524FFA21B8CB5F600054CBE /* Images.xcassets in Resources */,
 				655320B01A46A489001BE81A /* Images.xcassets in Resources */,
+				651811001B8F5488006CC9F1 /* LaunchScreen.xib in Resources */,
 				65DB237B1B04C86D005C9DA8 /* fudanicon60.png in Resources */,
-				6524FFA31B8CB5F600054CBE /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +549,6 @@
 				65DB236B1B038CA2005C9DA8 /* RefreshConst.swift in Sources */,
 				6553213E1A498D49001BE81A /* TopDetailTableViewCell.swift in Sources */,
 				65DB236C1B038CA2005C9DA8 /* RefreshFooterView.swift in Sources */,
-				6524FFA41B8CB5F600054CBE /* LSImgZoomView.swift in Sources */,
 				655321381A496CF5001BE81A /* Post_PA.swift in Sources */,
 				6536E75E1ACAEF5D0095AA12 /* HTTPUpload.swift in Sources */,
 				6553213C1A498B69001BE81A /* TopDetailTableViewController.swift in Sources */,
@@ -559,26 +561,27 @@
 				6536E75D1ACAEF5D0095AA12 /* HTTPTask.swift in Sources */,
 				655320CF1A46AC14001BE81A /* Top10.swift in Sources */,
 				655321361A496C77001BE81A /* bbstcon.swift in Sources */,
-				6524FFA11B8CB5F600054CBE /* DiscussViewController.swift in Sources */,
+				651811091B8F5488006CC9F1 /* ViewController.swift in Sources */,
+				651811081B8F5488006CC9F1 /* MyLayout.swift in Sources */,
 				65DB236D1B038CA2005C9DA8 /* RefreshHeaderView.swift in Sources */,
 				65DA01C11B10642B00F7185B /* MyFavouritePostTableViewController.swift in Sources */,
+				651811051B8F5488006CC9F1 /* LSImgZoomView.swift in Sources */,
 				65647F741B861A2500495A74 /* MailDetail.swift in Sources */,
 				65DB23831B04CE61005C9DA8 /* FudanBBS.xcdatamodeld in Sources */,
 				655320C91A46AAA6001BE81A /* TopTableViewController.swift in Sources */,
 				6524FD511B896E7800054CBE /* PstMail.swift in Sources */,
 				6536E75C1ACAEF5D0095AA12 /* HTTPResponseSerializer.swift in Sources */,
+				651811061B8F5488006CC9F1 /* MyCollectionViewCell.swift in Sources */,
 				65DB236A1B038CA2005C9DA8 /* RefreshBaseView.swift in Sources */,
 				652F37FF1B78E38C007B65BB /* Post.swift in Sources */,
 				65DA01B91B10561900F7185B /* MyFavouriteTableViewController.swift in Sources */,
 				6536E75B1ACAEF5D0095AA12 /* HTTPRequestSerializer.swift in Sources */,
+				651811021B8F5488006CC9F1 /* DiscussViewController.swift in Sources */,
 				652F38101B7CD2EA007B65BB /* MailDetailViewController.swift in Sources */,
-				6524FFA81B8CB5F600054CBE /* ViewController.swift in Sources */,
-				6524FFA71B8CB5F600054CBE /* MyLayout.swift in Sources */,
 				651A80E41B807304001AEC72 /* LoginTableViewController.swift in Sources */,
 				65DB23871B04D159005C9DA8 /* UserInfoHandler.swift in Sources */,
 				65DA01BF1B105FE100F7185B /* MyFavouriteListTableViewController.swift in Sources */,
 				655320D11A46B082001BE81A /* TopTableViewCell.swift in Sources */,
-				6524FFA51B8CB5F600054CBE /* MyCollectionViewCell.swift in Sources */,
 				655320EB1A46B3D6001BE81A /* Top10HTTPHandler.swift in Sources */,
 				65DB23851B04CF38005C9DA8 /* UserInfo.swift in Sources */,
 				65DB236E1B038CA2005C9DA8 /* UIScrollView+Refresh.swift in Sources */,
@@ -604,6 +607,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		651810F31B8F5488006CC9F1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651810F41B8F5488006CC9F1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		655320AC1A46A489001BE81A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
